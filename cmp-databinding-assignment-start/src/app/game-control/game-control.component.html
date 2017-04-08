@@ -1,0 +1,14 @@
+<button (click)="onStart()">Start</button>
+<button (click)="onStop()">Stop</button>
+
+<div class="row">
+  <div class="col-xs-6">
+    <h1>Odd</h1>
+    <app-odd *ngFor="let o of odd" [number]="o"></app-odd>
+  </div>
+  <div class="col-xs-6">
+    <h1>Even</h1>
+    <app-even *ngFor="let e of even" [number]="e"></app-even>
+  </div>
+</div>
+
